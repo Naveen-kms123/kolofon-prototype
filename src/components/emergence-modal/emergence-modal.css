@@ -1,0 +1,356 @@
+.emergence-modal {
+  max-width: 900px;
+  background: #0f1013;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  box-shadow:
+    0 24px 64px rgba(0, 0, 0, 0.75),
+    0 0 0 1px rgba(255, 255, 255, 0.04),
+    0 0 50px rgba(200, 240, 74, 0.08);
+}
+
+.emergence-content {
+  padding: 34px 28px 32px 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.emergence-brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 2px;
+  user-select: none;
+}
+
+.emergence-brand-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.emergence-logo-row {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  line-height: 1;
+}
+
+.emergence-logo-text {
+  font-family: var(--font-sans);
+  font-weight: 800;
+  font-size: 24px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.emergence-leaf {
+  width: 14px;
+  height: 14px;
+  margin-top: -8px;
+}
+
+.emergence-year {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  align-self: flex-end;
+  margin-top: 1px;
+  margin-right: 2px;
+}
+
+.emergence-title {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(34px, 4.2vw, 42px);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin-top: 10px;
+}
+
+.emergence-title .accent {
+  color: var(--accent);
+}
+
+.emergence-desc {
+  font-family: var(--font-sans);
+  font-size: 13.5px;
+  line-height: 20px;
+  color: rgba(240, 239, 234, 0.82);
+  margin-top: 12px;
+  max-width: 410px;
+}
+
+.emergence-desc .accent-highlight {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.emergence-stats {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 18px;
+  padding-bottom: 2px;
+}
+
+.emergence-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.emergence-stat-num {
+  font-family: var(--font-sans);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+.emergence-stat-label {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  line-height: 14px;
+  color: var(--ink-muted);
+}
+
+.emergence-stat-div {
+  width: 1px;
+  height: 28px;
+  background: var(--hairline);
+}
+
+.emergence-pills {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.emergence-pill {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(240, 239, 234, 0.12);
+  border-radius: 10px;
+  padding: 8px 12px;
+}
+
+.emergence-pill-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--accent);
+}
+
+.emergence-pill-text {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.emergence-pill-venue {
+  flex: 1.25;
+}
+
+.emergence-pill-col {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.emergence-pill-title {
+  font-family: var(--font-sans);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
+.emergence-pill-sub {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: var(--ink-muted);
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.emergence-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 22px;
+  flex-wrap: wrap;
+}
+
+.emergence-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 44px;
+  padding: 0 20px;
+  background: var(--accent);
+  color: var(--on-accent);
+  border-radius: var(--radius-pill);
+  border: none;
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 2px 10px rgba(200, 240, 74, 0.25);
+}
+
+.emergence-btn-primary:hover {
+  transform: translateY(-1px);
+  background: #d4f664;
+  box-shadow: 0 4px 14px rgba(200, 240, 74, 0.4);
+}
+
+.emergence-btn-primary svg {
+  transition: transform 0.15s ease;
+}
+
+.emergence-btn-primary:hover svg {
+  transform: translateX(3px);
+}
+
+.emergence-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  border: none;
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 13.5px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 6px 0;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: rgba(240, 239, 234, 0.4);
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+.emergence-btn-secondary:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
+.emergence-visual {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background: #090a0c;
+  overflow: hidden;
+  display: flex;
+}
+
+.emergence-artwork-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+@media (max-width: 860px) {
+  .emergence-modal {
+    max-width: 680px;
+    grid-template-columns: 1fr;
+    max-height: 92vh;
+    overflow-y: auto;
+  }
+
+  .emergence-visual {
+    order: -1;
+    height: 220px;
+    min-height: 220px;
+  }
+
+  .emergence-artwork-img {
+    object-position: center 25%;
+  }
+
+  .emergence-content {
+    padding: 24px;
+  }
+
+  .emergence-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 520px) {
+  .emergence-modal {
+    border-radius: 16px;
+    max-height: 94vh;
+  }
+
+  .emergence-visual {
+    height: 180px;
+    min-height: 180px;
+  }
+
+  .emergence-content {
+    padding: 20px 16px;
+  }
+
+  .emergence-title {
+    font-size: 28px;
+  }
+
+  .emergence-desc {
+    font-size: 13px;
+  }
+
+  .emergence-pills {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .emergence-pill-venue {
+    flex: 1;
+  }
+
+  .emergence-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .emergence-btn-primary {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .emergence-btn-secondary {
+    justify-content: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .emergence-btn-primary {
+    transition: none;
+  }
+}
