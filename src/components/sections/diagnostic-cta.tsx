@@ -18,10 +18,9 @@ export default function DiagnosticCta() {
   return (
     <section className="section cta" id="diagnostic">
       <div>
-        <p className="eyebrow">Start here · Phase 1 (Week 0)</p>
+        <p className="eyebrow">Start here · Phase 1 · Week 0</p>
         <h2 className="display-l">
-          Ready to cut AI spend and{" "}
-          <span className="hl">harden production reliability?</span>
+          Ready to cut AI spend and harden production reliability?
         </h2>
         <p className="body-l cta-sub">
           Schedule a 30-minute technical scoping session with Kolofon.ai to

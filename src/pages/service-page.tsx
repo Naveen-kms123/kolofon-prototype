@@ -79,7 +79,7 @@ export default function ServicePage({ slug }: ServicePageProps) {
       {/* Under-the-Hood Stack */}
       <section className="section">
         <div className="section-head">
-          <p className="eyebrow accent">Under-the-Hood Stack</p>
+          <p className="eyebrow accent">Under-the-hood stack</p>
           <h2 className="display-l">
             Production &amp; open-source tooling we wire in.
           </h2>
@@ -92,7 +92,7 @@ export default function ServicePage({ slug }: ServicePageProps) {
         <div className="stack-grid">
           {service.stack.map((tool) => (
             <div key={tool.name} className="stack-card">
-              <p className="eyebrow accent">Wired In</p>
+              <p className="eyebrow accent">Wired in</p>
               <h3 className="subheading">{tool.name}</h3>
               <p className="body muted">{tool.role}</p>
             </div>
@@ -104,7 +104,7 @@ export default function ServicePage({ slug }: ServicePageProps) {
       <section className="section light alt">
         <div className="deliverable-grid">
           <div>
-            <p className="eyebrow accent">Board-Ready Deliverable Preview</p>
+            <p className="eyebrow accent">Board-ready deliverable preview</p>
             <h2 className="display-l" style={{ marginTop: "var(--space-2)" }}>
               {service.deliverableTitle}
             </h2>
@@ -179,7 +179,7 @@ export default function ServicePage({ slug }: ServicePageProps) {
       {/* Related Offerings */}
       <section className="section">
         <div className="section-head">
-          <p className="eyebrow accent">Next in Your Architecture</p>
+          <p className="eyebrow accent">Next in your architecture</p>
           <h2 className="display-l">Pair with other sprints &amp; retainers.</h2>
         </div>
         <div className="matrix-grid">
@@ -188,7 +188,6 @@ export default function ServicePage({ slug }: ServicePageProps) {
               <div>
                 <div className="service-card-meta">
                   <span className="badge-accent">{r.format}</span>
-                  <span className="chip">{r.targetBuyer}</span>
                 </div>
                 <h3 className="subheading" style={{ marginTop: "var(--space-4)" }}>
                   {r.name}

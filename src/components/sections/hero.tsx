@@ -39,7 +39,7 @@ export default function Hero() {
       <div className="hero-scrim" />
       <div className="hero-content">
         <p className="eyebrow accent">
-          Kolofon.ai · AI Efficiency Intelligence &amp; Reliability Engineering
+          AI Efficiency Intelligence &amp; Reliability Engineering
         </p>
         <h1 className="display-xl hero-title">
           Cut AI spend.{" "}

@@ -16,8 +16,8 @@ export default function ProblemLeaks() {
   return (
     <section className="section" id="leaks">
       <div className="section-head">
-        <p className="eyebrow accent">The Production Reality (Why Teams Stall)</p>
-        <h2 className="display-l">Where Production AI Breaks.</h2>
+        <p className="eyebrow accent">The production reality · Why teams stall</p>
+        <h2 className="display-l">Where production AI breaks.</h2>
         <p className="body-l muted section-sub">
           Separate the budget leaks from the trust leaks—we engineer fixes for
           both across your existing stack.
@@ -41,7 +41,7 @@ export default function ProblemLeaks() {
           className={`tab-btn ${tab === "cost" ? "active" : ""}`}
           onClick={() => setTab("cost")}
         >
-          Cost Leaks (3)
+          Cost Leaks
         </button>
         <button
           type="button"
@@ -50,7 +50,7 @@ export default function ProblemLeaks() {
           className={`tab-btn ${tab === "reliability" ? "active" : ""}`}
           onClick={() => setTab("reliability")}
         >
-          Reliability Leaks (3)
+          Reliability Leaks
         </button>
       </div>
 

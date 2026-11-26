@@ -62,12 +62,12 @@ export const SERVICES: ServiceOffering[] = [
     slug: "ai-cost-audit",
     code: "ENTRY DIAGNOSTIC",
     pillar: "finops",
-    pillarLabel: "AI Efficiency Intelligence (AI FinOps)",
+    pillarLabel: "AI Efficiency Intelligence",
     format: "4-Week Diagnostic",
     targetBuyer: "CFO · CTO · CIO",
     name: "4-Week AI Cost Audit",
-    shortName: "AI Cost Audit (4 Weeks)",
-    navMeta: "4 Weeks · Entry Diagnostic",
+    shortName: "AI Cost Audit",
+    navMeta: "4 Weeks · Diagnostic",
     tagline: "Four weeks. A fixed scope. A plan finance and engineering can both sign.",
     summary:
       "The entry diagnostic for enterprises with unmapped multi-team spend. We map every workflow, model, and vendor, benchmark cheaper alternatives against your quality bar, and hand over a signed savings plan.",
@@ -96,12 +96,12 @@ export const SERVICES: ServiceOffering[] = [
         body: "Test cheaper model routes, caching candidates, and prompt pruning against your own quality bar.",
       },
       {
-        when: "Week 4 (Part 1)",
+        when: "Week 4 - Part 1",
         title: "Risk & Effort Sizing",
         body: "Quantify engineering effort, latency impact, and rollback safety for every proposed optimization.",
       },
       {
-        when: "Week 4 (Part 2)",
+        when: "Week 4 - Part 2",
         title: "Executive Sign-Off Plan",
         body: "Deliver a prioritised implementation roadmap signed off by finance and engineering together.",
       },
@@ -121,7 +121,7 @@ export const SERVICES: ServiceOffering[] = [
       kpis: [
         { label: "Mapped Spend", value: "100%", tone: "ok" },
         { label: "Top Leak", value: "Frontier Over-Use", tone: "accent" },
-        { label: "Target Sprint", value: "Service I (14d)" },
+        { label: "Target Sprint", value: "Service I · 14 Days" },
       ],
       columns: ["Workflow", "Primary Leak", "Recommended Fix"],
       rows: [
@@ -136,14 +136,14 @@ export const SERVICES: ServiceOffering[] = [
   },
   {
     slug: "caching-token-telemetry",
-    code: "SERVICE I · 2-WEEK SPRINT",
+    code: "SERVICE I",
     pillar: "finops",
-    pillarLabel: "AI Efficiency Intelligence (AI FinOps)",
+    pillarLabel: "AI Efficiency Intelligence",
     format: "2-Week Sprint",
     targetBuyer: "CFO · CTO · Engineering",
     name: "Caching and Token Telemetry Service",
-    shortName: "Caching & Token Telemetry (2-Week Sprint)",
-    navMeta: "2-Week Sprint · AI FinOps",
+    shortName: "Caching & Token Telemetry",
+    navMeta: "2-Week Sprint",
     tagline: "Turn invisible LLM token burn into governed unit economics without degrading answer quality.",
     summary:
       "Deploy trace-level observability (Langfuse/LangSmith), prune bloated prompts, enable provider prompt caching (up to 90% off), and add semantic caching + dynamic model routing in 14 days.",
@@ -213,14 +213,14 @@ export const SERVICES: ServiceOffering[] = [
   },
   {
     slug: "model-arbitrage",
-    code: "SERVICE II · MANAGED RETAINER",
+    code: "SERVICE II",
     pillar: "finops",
-    pillarLabel: "AI Efficiency Intelligence (AI FinOps)",
+    pillarLabel: "AI Efficiency Intelligence",
     format: "Managed Retainer",
     targetBuyer: "CTO · VP Engineering · CFO",
     name: "Quarterly 'Model-Arbitrage' Switchover Retainer",
-    shortName: "Quarterly Model-Arbitrage Switchover (Retainer)",
-    navMeta: "Managed Retainer · AI FinOps",
+    shortName: "Quarterly Model-Arbitrage Switchover",
+    navMeta: "Managed Retainer",
     tagline: "Continuously capture price-performance breakthroughs across new LLM releases with zero production regressions.",
     summary:
       "Safely migrate workloads to cheaper, newer models every quarter using golden datasets, offline Promptfoo/Ragas replay, shadow testing, and 5% → 25% → 50% → 100% canary rollouts.",
@@ -246,7 +246,7 @@ export const SERVICES: ServiceOffering[] = [
       },
       {
         when: "Stage 03",
-        title: "Shadow Mode (3–7 Days)",
+        title: "Shadow Mode · 3–7 Days",
         body: "Duplicate live gateway traffic silently to both models. Run async daily batch evals (Promptfoo + Ragas) on fresh production inputs with zero added user latency.",
       },
       {
@@ -271,7 +271,7 @@ export const SERVICES: ServiceOffering[] = [
       "Full offline and shadow evaluation scorecards proving the cheaper model matches or beats legacy accuracy before cutover.",
     artifact: {
       title: "Quarterly Model-Arbitrage Parity Scorecard",
-      subtitle: "Golden Dataset (3,200 traces) · Candidate vs. Legacy Model",
+      subtitle: "Golden Dataset · 3,200 Traces · Candidate vs. Legacy Model",
       kpis: [
         { label: "JSON Schema", value: "99.8% Pass", tone: "ok" },
         { label: "RAG Faithfulness", value: "+1.4% Lift", tone: "ok" },
@@ -279,8 +279,8 @@ export const SERVICES: ServiceOffering[] = [
       ],
       columns: ["Eval Gate", "Legacy Baseline", "Candidate Result"],
       rows: [
-        ["Instruction Adherence", "97.2%", "97.6% (Parity)"],
-        ["p95 Latency", "1,840 ms", "910 ms (-50%)"],
+        ["Instruction Adherence", "97.2%", "97.6% · Parity"],
+        ["p95 Latency", "1,840 ms", "910 ms · -50%"],
         ["Batch Regression Audit", "Scheduled", "0 Critical Failures"],
       ],
       footnote: "Legacy API keys retained in hot standby for 14-day soak window.",
@@ -290,14 +290,14 @@ export const SERVICES: ServiceOffering[] = [
   },
   {
     slug: "agent-hardening",
-    code: "SERVICE III · 2-WEEK SPRINT",
+    code: "SERVICE III",
     pillar: "reliability",
     pillarLabel: "AI Reliability Engineering",
     format: "2-Week Sprint",
     targetBuyer: "CTO · VP Engineering",
     name: "Agent Reliability Hardening",
-    shortName: "Agent Reliability Hardening (2-Week Sprint)",
-    navMeta: "2-Week Sprint · Reliability",
+    shortName: "Agent Reliability Hardening",
+    navMeta: "2-Week Sprint",
     tagline: "Wrap existing AI agents with practical production 'seatbelts'—without rewriting core product logic.",
     summary:
       "Wrap agents with hard spend ceilings, loop-detection circuit breakers, Pydantic/Zod tool schema validation, provider fallbacks, and human approval gates in 14 days.",
@@ -314,12 +314,12 @@ export const SERVICES: ServiceOffering[] = [
       {
         when: "Days 1–3",
         title: "Tool Risk Mapping & Spend Ceilings",
-        body: "Separate safe read-only lookups from high-risk write tools (CRM updates, emails, refunds). Enforce hard token, step, and ₹/$ ceilings per user and session.",
+        body: "Separate safe read-only lookups from high-risk write tools: CRM updates, emails, refunds. Enforce hard token, step, and ₹/$ ceilings per user and session.",
       },
       {
         when: "Days 4–5",
         title: "Loop-Detection Circuit Breakers",
-        body: "Deploy runtime monitors to detect circular reasoning or repetitive failing tool calls (e.g., >3 retries) and auto-halt execution with a safe fallback response.",
+        body: "Deploy runtime monitors to detect circular reasoning or repetitive failing tool calls — such as >3 retries — and auto-halt execution with a safe fallback response.",
       },
       {
         when: "Days 6–8",
@@ -367,14 +367,14 @@ export const SERVICES: ServiceOffering[] = [
   },
   {
     slug: "knowledge-hygiene",
-    code: "SERVICE IV · MANAGED RETAINER",
+    code: "SERVICE IV",
     pillar: "reliability",
     pillarLabel: "AI Reliability Engineering",
     format: "Managed Retainer",
     targetBuyer: "CTO · VP Engineering · Product",
     name: "Monthly Knowledge Hygiene & Retrieval Ops Retainer",
-    shortName: "Monthly Knowledge Hygiene & Retrieval Ops (Retainer)",
-    navMeta: "Managed Retainer · Reliability",
+    shortName: "Monthly Knowledge Hygiene & Retrieval Ops",
+    navMeta: "Managed Retainer",
     tagline: "Act as the dedicated caretaker for your RAG knowledge base and vector store so answers stay accurate month after month.",
     summary:
       "Keep RAG accurate post-launch via weekly contradiction audits, stale embedding purges, Ragas retrieval hit-rate tracking, and missing-knowledge backlogs.",
@@ -391,7 +391,7 @@ export const SERVICES: ServiceOffering[] = [
       {
         when: "Stage 01",
         title: "Weekly Contradiction Audits",
-        body: "Scan newly uploaded and existing PDFs, policies, and help articles weekly to flag conflicting facts (e.g., clashing leave rules or outdated tariffs) before ingestion.",
+        body: "Scan newly uploaded and existing PDFs, policies, and help articles weekly to flag conflicting facts — such as clashing leave rules or outdated tariffs — before ingestion.",
       },
       {
         when: "Stage 02",
@@ -444,20 +444,20 @@ export const SERVICES: ServiceOffering[] = [
   },
   {
     slug: "maker-checker",
-    code: "SERVICE V · 2-WEEK SPRINT",
+    code: "SERVICE V",
     pillar: "reliability",
     pillarLabel: "AI Reliability Engineering",
     format: "2-Week Sprint",
     targetBuyer: "CTO · Compliance · Legal",
     name: "The 'AI Maker-Checker' Layer",
-    shortName: "The \"AI Maker-Checker\" Layer (2-Week Sprint)",
-    navMeta: "2-Week Sprint · Reliability",
+    shortName: "The \"AI Maker-Checker\" Layer",
+    navMeta: "2-Week Sprint",
     tagline: "Bolt a lightweight, invisible <1s gatekeeper behind your existing AI to catch and repair high-stakes mistakes before users see them.",
     summary:
       "Non-invasive 60–100 lines of Python or TypeScript middleware with zero core AI rewrite. Combines ~5ms deterministic code checks with a cross-family mini-model verifier and silent auto-repair.",
     heroMetricHighlight: "<1s added latency · 60–100 lines of middleware",
     metrics: [
-      { value: "<1s", label: "Added latency for high-stakes checks (0ms bypass for casual chat)" },
+      { value: "<1s", label: "Added latency for high-stakes checks — 0ms bypass for casual chat" },
       { value: "~5 ms", label: "Stage 1 deterministic code check at ₹0 cost" },
       { value: "60–100", label: "Lines of Python or TypeScript middleware—zero core AI rewrite" },
       { value: "1 Retry", label: "Hard cap on silent auto-repair before clean human/safe fallback" },
@@ -467,13 +467,13 @@ export const SERVICES: ServiceOffering[] = [
     timeline: [
       {
         when: "Step 01",
-        title: "Trigger Routing (2-Hour Workshop)",
-        body: "Casual chat bypasses at 0ms delay. High-stakes intents (rupee amounts, refunds, legal/policy commitments) enter the Checker funnel against 10–15 non-negotiable rules.",
+        title: "Trigger Routing · 2-Hour Workshop",
+        body: "Casual chat bypasses at 0ms delay. High-stakes intents like rupee amounts, refunds, and legal commitments enter the Checker funnel against 10–15 non-negotiable rules.",
       },
       {
         when: "Step 02",
-        title: "Stage 1: Code Check (~5 ms · ₹0)",
-        body: "Deterministic code catches black-and-white violations: forbidden phrases ('100% guaranteed'), missing GST/disclaimers, PII leaks (Aadhaar, PAN, phone), and math errors.",
+        title: "Stage 1: Code Check · ~5 ms",
+        body: "Deterministic code catches black-and-white violations: forbidden phrases, missing GST or disclaimers, PII leaks like Aadhaar, PAN, and phone, and math errors.",
       },
       {
         when: "Step 03",
@@ -482,7 +482,7 @@ export const SERVICES: ServiceOffering[] = [
       },
       {
         when: "Step 04",
-        title: "Silent Auto-Repair (Cap: 1 Retry)",
+        title: "Silent Auto-Repair · Cap: 1 Retry",
         body: "Flawed drafts trigger one instant rewrite with exact flaw feedback, re-verified by the Checker. If still flawed, traffic escalates cleanly to human or safe fallback.",
       },
       {
@@ -494,7 +494,7 @@ export const SERVICES: ServiceOffering[] = [
     stack: [
       { name: "Python / TypeScript Middleware", role: "60–100 lines wrapping existing AI with zero rewrite" },
       { name: "Pydantic / JSON Switch", role: "Clean pass/fail contract & streaming buffer" },
-      { name: "Deterministic Rules Engine", role: "~5ms PII (Aadhaar/PAN), GST & math checks" },
+      { name: "Deterministic Rules Engine", role: "~5ms PII, GST & math checks" },
       { name: "Cross-Family Mini-Model", role: "Temp = 0 fact verification against source docs" },
     ],
     deliverableTitle: "The 'Errors Prevented' Executive Scorecard",
@@ -511,7 +511,7 @@ export const SERVICES: ServiceOffering[] = [
       columns: ["Rule Violated", "Intercepted Drafts", "Resolution"],
       rows: [
         ["Missing GST / Disclaimer", "142 drafts", "Silently auto-repaired"],
-        ["PII Leak (PAN / Phone)", "89 drafts", "Masked & re-verified"],
+        ["PII Leak", "89 drafts", "Masked & re-verified"],
         ["Source Doc Mismatch", "149 drafts", "Rewritten or escalated"],
       ],
       footnote: "Example outcome: '380 policy and pricing errors silently caught and fixed before customers saw them.'",
@@ -606,30 +606,37 @@ export const ENGINEERING_APPROACH = [
   },
 ];
 
+export const REALITY_POINTS = [
+  {
+    title: "Invisible Token Burn",
+    body: "Oversized frontier models, uncached system prompts, and bloated RAG contexts inflate invoices without per-workflow visibility.",
+  },
+  {
+    title: "Model Lock-In & Migration Fear",
+    body: "Teams avoid upgrading to newer, cheaper models because they lack regression testing across accuracy, JSON schemas, and latency.",
+  },
+  {
+    title: "Runaway Agent Loops & Tool Risks",
+    body: "Agents get stuck in retry loops, burn budgets overnight, or execute unvalidated write actions on downstream APIs.",
+  },
+  {
+    title: "Rotting Knowledge & Hallucinations",
+    body: "Conflicting PDFs, stale vector embeddings, and unverified high-stakes outputs erode user trust and create compliance exposure.",
+  },
+];
+
 export const FAQS = [
   {
-    q: "How much latency does the AI Maker-Checker layer add?",
-    a: "Under 1 second for high-stakes intents—and 0ms for casual chat, which bypasses the funnel entirely. Stage 1 deterministic code checks (forbidden phrases, PII like Aadhaar/PAN, GST/disclaimers, math) run in ~5ms at ₹0 cost, followed by a fast cross-family mini-model verification.",
+    q: "Will cutting cost hurt quality?",
+    a: "No change ships without being tested against your own quality benchmarks. If a cheaper setup does worse, we don't recommend it.",
   },
   {
-    q: "Will this disrupt our codebase or require rewriting our core AI product?",
-    a: "No. Our sprints are built as non-invasive gateway and middleware layers—for example, the Maker-Checker layer is implemented in 60–100 lines of Python or TypeScript middleware with zero core AI logic rewrite.",
+    q: "Do you need access to our data?",
+    a: "We need billing and usage metadata, not your customers' data. Where prompts or outputs are needed for quality testing, we work inside your environment under your controls.",
   },
   {
-    q: "How do you prevent quality regressions when switching to cheaper models?",
-    a: "Every migration in our Quarterly Model-Arbitrage Switchover follows a strict 5-stage gate: 1,000–5,000 anonymized traces in a golden dataset, offline Promptfoo + Ragas replay, 3–7 days of silent shadow mode, and a 5% → 25% → 50% → 100% canary rollout with an automated millisecond kill-switch.",
-  },
-  {
-    q: "Will cutting cost hurt answer quality?",
-    a: "No change ships without being tested against your own quality benchmarks. If a cheaper setup does worse on JSON formatting, instruction adherence, or RAG faithfulness, we don't ship it.",
-  },
-  {
-    q: "Do you need access to our customer data?",
-    a: "For cost audits we need billing and usage metadata, not your customers' data. Where prompts or outputs are needed for quality testing or shadow evaluations, we work inside your environment under your controls using anonymized traces.",
-  },
-  {
-    q: "Which models, frameworks, and vendors do you work with?",
-    a: "All major model providers, open-weight models, and cloud platforms, wiring in proven open-source and production tooling including Langfuse, LangSmith, Promptfoo, Ragas, Pydantic, Zod, and Redis. We have no reseller deals, so our advice is independent.",
+    q: "Which models and vendors do you work with?",
+    a: "All the major model providers, open-weight models and the main cloud platforms. We have no reseller deals, so our advice is independent.",
   },
 ];
 

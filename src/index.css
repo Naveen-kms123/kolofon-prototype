@@ -317,6 +317,107 @@ img, video { display: block; max-width: 100%; }
 }
 .approach-pillar { display: flex; flex-direction: column; gap: var(--space-2); }
 
+/* Slide 2 — Executive Summary Comparison (Con vs Pro) */
+.slide2-container {
+  margin-top: var(--space-16); padding-top: var(--space-16);
+  border-top: 1px solid var(--hairline);
+}
+.slide2-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-8);
+  margin-top: var(--space-8);
+}
+.slide2-col {
+  border-radius: var(--radius-md); padding: var(--space-8);
+  display: flex; flex-direction: column; gap: var(--space-6);
+  position: relative;
+}
+.slide2-col.con {
+  background: var(--surface-alt);
+  border: 1px solid rgba(220, 38, 38, 0.25);
+  border-top: 3px solid #dc2626;
+}
+.slide2-col.pro {
+  background: var(--surface-alt);
+  border: 1px solid rgba(22, 163, 74, 0.28);
+  border-top: 3px solid #16a34a;
+}
+.light .slide2-col.con {
+  background: #ebe9e4;
+  border: 1px solid rgba(185, 28, 28, 0.22);
+  border-top: 3px solid #b91c1c;
+}
+.light .slide2-col.pro {
+  background: #e6eae2;
+  border: 1px solid rgba(21, 128, 61, 0.25);
+  border-top: 3px solid #15803d;
+}
+.slide2-col-meta {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--space-3);
+  padding-bottom: var(--space-4); border-bottom: 1px solid var(--hairline);
+  flex-wrap: wrap;
+}
+.slide2-chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  border-radius: var(--radius-pill);
+  padding: 4px 12px; font: 700 11px / 16px var(--font-mono);
+  text-transform: uppercase; letter-spacing: 0.08em;
+}
+.slide2-chip.con {
+  background: rgba(220, 38, 38, 0.1); color: #dc2626;
+  border: 1px solid rgba(220, 38, 38, 0.28);
+}
+.slide2-chip.pro {
+  background: rgba(22, 163, 74, 0.12); color: #16a34a;
+  border: 1px solid rgba(22, 163, 74, 0.3);
+}
+.light .slide2-chip.con {
+  background: rgba(185, 28, 28, 0.09); color: #991b1b;
+  border-color: rgba(185, 28, 28, 0.25);
+}
+.light .slide2-chip.pro {
+  background: rgba(21, 128, 61, 0.11); color: #14532d;
+  border-color: rgba(21, 128, 61, 0.28);
+}
+.slide2-col-eyebrow {
+  margin: 0;
+  font-weight: 700;
+}
+.slide2-col-eyebrow.con { color: #b91c1c; }
+.slide2-col-eyebrow.pro { color: #15803d; }
+.slide2-items {
+  display: flex; flex-direction: column; gap: var(--space-6);
+}
+.slide2-item {
+  display: flex; flex-direction: column; gap: 6px;
+}
+.slide2-item-title {
+  display: flex; align-items: center; gap: 12px;
+}
+.slide2-icon {
+  display: inline-grid; place-items: center; width: 22px; height: 22px;
+  border-radius: 50%; font-size: 11px; font-weight: 700; flex: none;
+  font-family: var(--font-mono); line-height: 1;
+}
+.slide2-icon.con {
+  background: rgba(220, 38, 38, 0.12); color: #dc2626;
+  border: 1px solid rgba(220, 38, 38, 0.25);
+}
+.slide2-icon.pro {
+  background: rgba(22, 163, 74, 0.14); color: #16a34a;
+  border: 1px solid rgba(22, 163, 74, 0.3);
+}
+.light .slide2-icon.con {
+  background: rgba(185, 28, 28, 0.12); color: #991b1b;
+  border-color: rgba(185, 28, 28, 0.25);
+}
+.light .slide2-icon.pro {
+  background: rgba(21, 128, 61, 0.14); color: #14532d;
+  border-color: rgba(21, 128, 61, 0.28);
+}
+.slide2-item-body {
+  padding-left: 34px;
+}
+
 /* Image Placeholder */
 .image-placeholder {
   position: relative; width: 100%; border-radius: var(--radius-md);
@@ -335,14 +436,6 @@ img, video { display: block; max-width: 100%; }
   padding: var(--space-6); max-width: 360px;
 }
 .placeholder-icon { width: 32px; height: 32px; color: var(--ink-muted); }
-
-/* Kerala Band */
-.band { position: relative; margin: 0; }
-.band img { width: 100%; aspect-ratio: 21 / 9; object-fit: cover; filter: brightness(1.08) contrast(0.95); }
-.band-caption {
-  position: absolute; left: var(--gutter); bottom: var(--space-6); color: var(--paper-50);
-  text-shadow: 0 2px 12px rgba(18, 19, 21, 0.8);
-}
 
 /* FAQ */
 .faq { display: grid; grid-template-columns: 1fr 1.4fr; gap: var(--space-16); }
@@ -492,13 +585,12 @@ img, video { display: block; max-width: 100%; }
 @media (max-width: 860px) {
   .nav-links { display: none; }
   .nav-mobile-actions { display: flex; }
-  .pillars-grid, .leaks, .approach, .approach-pillars, .faq, .cta, .form, .checkbox-group {
+  .pillars-grid, .leaks, .approach, .approach-pillars, .slide2-grid, .faq, .cta, .form, .checkbox-group {
     grid-template-columns: 1fr;
   }
   .form .span-2 { grid-column: auto; }
   .h-timeline { grid-template-columns: 1fr; }
   .artifact-kpis { grid-template-columns: 1fr; }
-  .band img { aspect-ratio: 4 / 3; }
   .hero-content { padding-bottom: var(--space-16); }
   .hero-toggle { bottom: var(--space-4); }
 }

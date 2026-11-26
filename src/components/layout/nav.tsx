@@ -3,10 +3,10 @@ import { useEffect, useRef, useState } from "react";
 import { SERVICES } from "../../data/services";
 
 interface NavProps {
-  onOpenEmergence: () => void;
+  onOpenEmergence?: () => void;
 }
 
-export default function Nav({ onOpenEmergence }: NavProps) {
+export default function Nav({ onOpenEmergence: _onOpenEmergence }: NavProps) {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
@@ -71,7 +71,7 @@ export default function Nav({ onOpenEmergence }: NavProps) {
             <div className="nav-mega" role="menu">
               <div className="nav-mega-col">
                 <p className="eyebrow accent nav-mega-head">
-                  AI Efficiency Intelligence (AI FinOps)
+                  AI Efficiency Intelligence
                 </p>
                 {finopsServices.map((s) => (
                   <Link
@@ -112,14 +112,6 @@ export default function Nav({ onOpenEmergence }: NavProps) {
           How We Work
         </a>
 
-        <button
-          type="button"
-          className="nav-dropdown-trigger"
-          onClick={onOpenEmergence}
-        >
-          Emergence
-        </button>
-
         <a href="#diagnostic" className="btn btn-primary btn-sm">
           Book a Diagnostic
         </a>
@@ -151,7 +143,7 @@ export default function Nav({ onOpenEmergence }: NavProps) {
       {mobileOpen && (
         <div className="nav-mobile-drawer" role="dialog" aria-label="Mobile navigation">
           <div className="nav-mobile-group">
-            <p className="eyebrow accent">AI Efficiency Intelligence (AI FinOps)</p>
+            <p className="eyebrow accent">AI Efficiency Intelligence</p>
             {finopsServices.map((s) => (
               <Link
                 key={s.slug}
@@ -186,19 +178,8 @@ export default function Nav({ onOpenEmergence }: NavProps) {
               className="nav-mobile-link"
               onClick={() => setMobileOpen(false)}
             >
-              <span className="body">How We Work (Sprints vs. Retainers)</span>
+              <span className="body">How We Work · Sprints vs. Retainers</span>
             </a>
-            <button
-              type="button"
-              className="nav-mobile-link"
-              style={{ background: "none", borderLeft: 0, borderRight: 0, borderTop: 0, textAlign: "left", color: "inherit", cursor: "pointer" }}
-              onClick={() => {
-                setMobileOpen(false);
-                onOpenEmergence();
-              }}
-            >
-              <span className="body">Emergence (Events &amp; Community)</span>
-            </button>
           </div>
         </div>
       )}

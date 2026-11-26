@@ -30,9 +30,9 @@ export default function ServiceMatrix() {
   return (
     <section className="section light alt" id="service-matrix">
       <div className="section-head">
-        <p className="eyebrow accent">Service Architecture</p>
+        <p className="eyebrow accent">Service architecture</p>
         <h2 className="display-l">
-          Modular Offerings Across Two Core Pillars.
+          Modular offerings across two core pillars.
         </h2>
         <p className="body-l muted section-sub">
           Mix and match fixed-duration implementation sprints with ongoing
@@ -65,7 +65,6 @@ export default function ServiceMatrix() {
             <div>
               <div className="service-card-meta">
                 <span className="badge-accent">{s.format}</span>
-                <span className="chip">{s.targetBuyer}</span>
               </div>
               <p
                 className="eyebrow accent"
